@@ -1,0 +1,78 @@
+/* Styling for the Possibility section */
+.gpt3__possibility {
+  display: flex; /* Display content in a flex container */
+  flex-direction: row; /* Arrange content horizontally (left to right) */
+}
+
+/* Styling for the image container on the left side */
+.gpt3__possibility-image {
+  flex: 1; /* Take up 1/2 of the available space */
+  display: flex;
+  justify-content: flex-start; /* Align content to the left */
+  align-items: center;
+  margin-right: 2rem; /* Add a margin on the right for spacing */
+}
+
+/* Styling for the image inside the image container */
+.gpt3__possibility-image img {
+  width: 100%; /* Ensure the image takes up 100% of the container width */
+  height: 100%; /* Ensure the image takes up 100% of the container height */
+}
+
+/* Styling for the content container on the right side */
+.gpt3__possibility-content {
+  flex: 1; /* Take up 1/2 of the available space */
+  display: flex;
+  flex-direction: column; /* Arrange content vertically */
+  justify-content: flex-end; /* Align content to the bottom */
+  align-items: flex-start; /* Align content to the left */
+}
+
+/* Styling for the first <h4> element */
+.gpt3__possibility-content h4 {
+  color: #71e5ff; /* Text color */
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px; /* Line height for spacing */
+}
+
+/* Styling for the last <h4> element */
+.gpt3__possibility-content h4:last-child {
+  color: #ff8a71; /* Text color */
+}
+
+/* Styling for the main <h1> heading */
+.gpt3__possibility-content h1 {
+  color: #fff; /* Text color */
+  font-family: var(--font-family);
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 45px; /* Line height for spacing */
+  margin: 1rem 0; /* Add margin for spacing */
+}
+
+/* Styling for the paragraph text */
+.gpt3__possibility-content p {
+  color: #81afdd; /* Text color */
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* Line height for spacing */
+  margin-bottom: 2rem; /* Add margin at the bottom for spacing */
+}
+
+/* Media query for screens with a maximum width of 950px */
+@media screen and (max-width: 950px) {
+  .gpt3__possibility {
+    flex-direction: column; /* Stack content vertically for smaller screens */
+  }
+  .gpt3__possibility-image {
+    margin: 1rem 0; /* Adjust margin for spacing */
+  }
+  .gpt3__possibility-content {
+    margin-top: 2rem; /* Adjust margin for spacing */
+  }
+}

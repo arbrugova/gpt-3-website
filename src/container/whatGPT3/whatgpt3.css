@@ -1,0 +1,117 @@
+/* Styling for the WhatGPT3 component */
+
+/* Styling for the main container */
+.gpt3__whatgpt3 {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  background: var(--color-footer); /* Background color with radial gradient */
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); /* Drop shadow effect */
+}
+
+/* Styling for the feature section within the component */
+.gpt3__whatgpt3-feature {
+  display: flex;
+}
+
+/* Customizing the appearance of the Feature component within this section */
+.gpt3__whatgpt3-feature .gpt3__features-container__feature {
+  margin: 0; /* Removing margin to adjust the layout */
+}
+
+/* Customizing the appearance of the text within the Feature component */
+.gpt3__whatgpt3-feature .gpt3__features-container_feature-text {
+  max-width: 700px; /* Setting a maximum width for the text */
+}
+
+/* Styling for the heading section within the component */
+.gpt3__whatgpt3-heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4rem 0 2rem;
+}
+
+/* Styling for the main heading */
+.gpt3__whatgpt3-heading h1 {
+  font-size: 34px;
+  line-height: 45px;
+  font-weight: 800;
+  font-family: var(--font-family);
+  max-width: 510px; /* Setting a maximum width for the heading */
+}
+
+/* Styling for the subtext paragraph */
+.gpt3__whatgpt3-heading p {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--color-subtext);
+  cursor: pointer;
+}
+
+/* Styling for the container of feature items */
+.gpt3__whatgpt3-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 2rem;
+}
+
+/* Customizing the appearance of the Feature component within this container */
+.gpt3__whatgpt3-container .gpt3__features-container__feature {
+  flex: 1;
+  margin: 1rem;
+  min-width: 210px; /* Setting a minimum width for feature items */
+  display: unset; /* Resetting the display property */
+  flex-direction: column; /* Adjusting the layout to column */
+}
+
+/* Customizing the appearance of the text within the Feature component */
+.gpt3__whatgpt3-container .gpt3__features-container_feature-text {
+  margin-top: 0.5rem; /* Adding margin to the text */
+}
+
+/* Media queries for responsive design */
+
+@media screen and (max-width: 850px) {
+  /* Adjusting layout for smaller screens */
+  .gpt3__whatgpt3-heading {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 0rem;
+  }
+
+  /* Adding margin to the subtext paragraph */
+  .gpt3__whatgpt3-heading p {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  /* Adjusting layout for smaller screens */
+  .gpt3__whatgpt3-feature .gpt3__features-container__feature {
+    flex-direction: column;
+  }
+
+  /* Adding margin to the text within Feature components */
+  .gpt3__whatgpt3-feature .gpt3__features-container_feature-text {
+    margin-top: 0.5rem;
+  }
+
+  /* Modifying the font size and line height of the main heading for smaller screens */
+  .gpt3__whatgpt3-heading h1 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  /* Adjusting layout for even smaller screens */
+  .gpt3__whatgpt3-container .gpt3__features-container__feature {
+    margin: 1rem 0;
+    min-width: 100%; /* Setting minimum width to 100% */
+  }
+}

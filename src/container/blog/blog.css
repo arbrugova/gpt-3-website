@@ -1,0 +1,81 @@
+/* Styles for the .gpt3__blog container */
+.gpt3__blog {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Styles for the blog heading */
+.gpt3__blog-heading {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 5rem;
+}
+
+/* Styles for the heading text */
+.gpt3__blog-heading h1 {
+  font-family: var(--font-family);
+  font-size: 62px;
+  font-weight: 800;
+  line-height: 75px; /* 120.968% */
+  letter-spacing: -0.04em;
+}
+
+/* Styles for the blog container */
+.gpt3__blog-container {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Styles for group A of articles */
+.gpt3__blog-container_groupA {
+  flex: 0.75;
+  margin-right: 2rem;
+}
+
+/* Styles for group B of articles (grid layout) */
+.gpt3__blog-container_groupB {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+}
+
+/* Media queries for responsive design */
+
+/* Adjust layout for screens with a maximum width of 990px */
+@media screen and (max-width: 990px) {
+  .gpt3__blog-container {
+    flex-direction: column-reverse;
+  }
+  .gpt3__blog-container_groupA {
+    margin: 2rem 0;
+  }
+  .gpt3__blog-container_groupA .gpt3__blog-container_article {
+    width: 48%;
+  }
+  .gpt3__blog-container_groupA .gpt3__blog-container_article-img {
+    height: 250px;
+  }
+}
+
+/* Adjust layout for screens with a maximum width of 700px */
+@media screen and (max-width: 700px) {
+  .gpt3__blog-container_groupB {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .gpt3__blog-container_groupA .gpt3__blog-container_article {
+    width: 100%;
+  }
+  .gpt3__blog-heading h1 {
+    font-size: 46px;
+    line-height: 52px;
+  }
+}
+
+/* Adjust heading font size for screens with a maximum width of 550px */
+@media screen and (max-width: 550px) {
+  .gpt3__blog-heading h1 {
+    font-size: 34px;
+    line-height: 42px;
+  }
+}

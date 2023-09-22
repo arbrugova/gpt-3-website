@@ -1,0 +1,28 @@
+/* Import Google Font */
+
+/* Import the "Manrope" font family from Google Fonts using an external URL. */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+
+/* Custom CSS Variables */
+
+/* Define custom CSS variables using the :root pseudo-class. These variables can be reused throughout the stylesheet. */
+:root {
+  --font-family: "Manrope", sans-serif; /* Define the font family for the entire document. */
+
+  --gradient-text: linear-gradient(
+    89.97deg,
+    #ae67fa 1.84%,
+    #f49867 102.67%
+  ); /* Define a gradient for text. */
+  --gradient-bar: linear-gradient(
+    103.22deg,
+    #ae67fa -13.86%,
+    #f49867 99.55%
+  ); /* Define a gradient for a bar. */
+
+  --color-bg: #040c18; /* Define the background color. */
+  --color-footer: #031b34; /* Define the color for the footer background. */
+  --color-blog: #042c54; /* Define the color for the blog section background. */
+  --color-text: #81afdd; /* Define the text color. */
+  --color-subtext: #ff8a71; /* Define a subtext color. */
+}

@@ -1,0 +1,77 @@
+/* Styles for the .gpt3__cta container */
+.gpt3__cta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 2rem;
+  margin: 4rem;
+  border-radius: 1rem;
+  background: var(--gradient-bar); /* Background color using a CSS variable */
+}
+
+/* Styles for text content within .gpt3__cta */
+.gpt3__cta-content p {
+  color: #0e0e0e;
+  font-family: var(--font-family); /* Font family using a CSS variable */
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.gpt3__cta-content h3 {
+  color: #000;
+  font-family: var(--font-family); /* Font family using a CSS variable */
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 45px;
+}
+
+/* Styles for the call-to-action button container */
+.gpt3__cta-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2rem;
+}
+
+/* Styles for the call-to-action button */
+.gpt3__cta-btn button {
+  color: #fff;
+  background: #000;
+  font-family: var(--font-family); /* Font family using a CSS variable */
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  border-radius: 40px;
+  outline: none;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  min-width: 150px;
+}
+
+/* Media query for screens with a maximum width of 650px */
+@media screen and (max-width: 650px) {
+  .gpt3__cta {
+    flex-direction: column;
+  }
+  .gpt3__cta-btn {
+    margin: 2rem 0 0;
+  }
+}
+
+/* Media query for screens with a maximum width of 550px */
+@media screen and (max-width: 550px) {
+  .gpt3__cta {
+    margin: 4rem 2rem;
+  }
+  .gpt3__cta-content h3 {
+    font-size: 18px; /* Adjust font size for smaller screens */
+    line-height: 32px; /* Adjust line height for smaller screens */
+  }
+  .gpt3__cta-btn {
+    font-size: 14px; /* Adjust font size for smaller screens */
+    line-height: 28px; /* Adjust line height for smaller screens */
+  }
+}

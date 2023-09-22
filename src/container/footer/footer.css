@@ -1,0 +1,158 @@
+/* Styles for the .gpt3__footer container */
+.gpt3__footer {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-footer);
+}
+
+/* Styles for the heading container */
+.gpt3__footer-heading {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+/* Styles for the heading text */
+.gpt3__footer-heading h1 {
+  text-align: center;
+  font-family: var(--font-family);
+  font-size: 62px;
+  font-weight: 800;
+  line-height: 75px;
+  letter-spacing: -0.04px;
+}
+
+/* Styles for the call-to-action button */
+.gpt3__footer-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  border: 1px solid #fff;
+  margin-bottom: 10rem;
+  cursor: pointer;
+}
+
+/* Styles for the call-to-action button text */
+.gpt3__footer-btn p {
+  color: #fff;
+  font-family: var(--font-family);
+  font-size: 18px;
+  font-weight: 400;
+  box-sizing: border-box;
+}
+
+/* Styles for the links section */
+.gpt3__footer-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  text-align: left;
+}
+
+/* Styles for individual link containers */
+.gpt3__footer-links div {
+  margin: 1rem;
+  width: 250px;
+}
+
+/* Styles for the logo and address container */
+.gpt3__footer-links_logo {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Styles for the logo image */
+.gpt3__footer-links_logo img {
+  width: 118px;
+  height: 30px;
+  margin-bottom: 2rem;
+}
+
+/* Styles for the address text */
+.gpt3__footer-links_logo p {
+  font-family: var(--font-family);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+/* Styles for link containers with headings */
+.gpt3__footer-links_div {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+/* Styles for link headings */
+.gpt3__footer-links_div h4 {
+  color: #fff;
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* Styles for individual links */
+.gpt3__footer-links_div p {
+  color: #fff;
+  font-family: var(--font-family);
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0.5rem 0;
+  cursor: pointer;
+}
+
+/* Styles for the copyright section */
+.gpt3__footer-copyright {
+  margin-top: 2rem;
+  text-align: center;
+  width: 100%;
+}
+
+/* Styles for copyright text */
+.gpt3__footer-copyright p {
+  color: #fff;
+  font-family: var(--font-family);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+/* Media queries for responsive design */
+
+/* Adjust heading font size for screens with a maximum width of 850px */
+@media screen and (max-width: 850px) {
+  .gpt3__footer-heading h1 {
+    font-size: 44px;
+    line-height: 50px;
+  }
+}
+
+/* Adjust font sizes for screens with a maximum width of 550px */
+@media screen and (max-width: 550px) {
+  .gpt3__footer-heading h1 {
+    font-size: 34px;
+    line-height: 42px;
+  }
+  .gpt3__footer-btn p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .gpt3__footer-links div {
+    margin: 1rem 0;
+  }
+}
+
+/* Additional media query for smaller screens */
+@media screen and (max-width: 550px) {
+  .gpt3__footer-heading h1 {
+    font-size: 27px;
+    line-height: 38px;
+  }
+}

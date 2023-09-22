@@ -1,0 +1,66 @@
+/* Styles for the .gpt3__features-container__feature container */
+.gpt3__features-container__feature {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  margin: 1rem;
+}
+
+/* Styles for the feature title container */
+.gpt3__features-container__feature-title {
+  flex: 1;
+  max-width: 180px;
+  margin-right: 2rem;
+}
+
+/* Styles for the title text within the feature */
+.gpt3__features-container__feature-title h1 {
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.04em;
+  color: #fff;
+}
+
+/* Styles for the decorative line under the title */
+.gpt3__features-container__feature-title div {
+  width: 38px;
+  height: 3px;
+  background: linear-gradient(103deg, #ae67fa -13.86%, #f49867 99.55%), #fff;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 0.25rem;
+}
+
+/* Styles for the feature text container */
+.gpt3__features-container__feature-text {
+  flex: 2;
+  max-width: 390px;
+  display: flex;
+}
+
+/* Styles for the text content within the feature */
+.gpt3__features-container__feature-text p {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--color-text);
+}
+
+/* Media query for screens with a maximum width of 550px */
+@media screen and (max-width: 550px) {
+  .gpt3__features-container__feature-title h1 {
+    font-size: 14px; /* Adjust font size for smaller screens */
+    line-height: 22px; /* Adjust line height for smaller screens */
+  }
+  .gpt3__features-container__feature-text p {
+    font-size: 12px; /* Adjust font size for smaller screens */
+    line-height: 20px; /* Adjust line height for smaller screens */
+  }
+  .gpt3__features-container__feature {
+    margin: 1rem 0; /* Adjust margin for smaller screens */
+  }
+}
